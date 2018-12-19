@@ -23,4 +23,4 @@
 # End of https://www.gitignore.io/api/go
 
 # IDE
-./idea
+.idea/
