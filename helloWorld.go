@@ -1,4 +1,4 @@
-package main
+package hello_golang
 
 import "fmt"
 
