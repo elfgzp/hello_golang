@@ -1,4 +1,4 @@
-package _package
+package main
 
 // package是最基本的分发单位和工程管理中依赖关系的体现
 // 每个Go语言源代码开头都必须要有package的声明，表示源码文件所属的代码包

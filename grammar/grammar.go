@@ -1,5 +1,5 @@
 // 程序所属包, 必须在首行
-package hello_golang
+package grammar
 
 // 依赖包
 import "fmt"
