@@ -2,10 +2,26 @@ package main
 
 import (
 	"fmt"
-	"time"
+	"sync"
 )
 
 func main() {
-	go fmt.Println("Go!")
-	time.Sleep(100 * time.Millisecond)
+	var wg sync.WaitGroup
+	wg.Add(3)
+	go func () {
+		fmt.Println("Go!")
+		wg.Done()
+	}()
+
+	go func() {
+		fmt.Println("Go!")
+		wg.Done()
+	}()
+
+	go func() {
+		fmt.Println("Go!")
+		wg.Done()
+	}()
+
+	wg.Wait()
 }
